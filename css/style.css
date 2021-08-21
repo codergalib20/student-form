@@ -1,0 +1,127 @@
+/* font-family: 'Arvo', serif; Notmal Style Font*/
+:root {
+  --style-font: "Lobster", cursive;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arvo", serif;
+}
+body {
+  background: #574b90;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#form {
+  max-width: 900px;
+  background: url(../img/banner.jpg) no-repeat top center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+#form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #3333339b;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.form-body {
+  padding: 2rem;
+  border: 1px solid #574b90;
+  z-index: 2;
+  position: relative;
+}
+.applicant-title {
+  width: 100%;
+  height: 20px;
+  background: silver;
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.applicant-title span {
+  z-index: 2;
+  position: relative;
+}
+.applicant-header {
+  padding: 2rem 0;
+}
+.applicant-header h1 {
+  font-size: 2.2rem;
+  font-weight: 200;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: var(--style-font);
+}
+.applicant-header p {
+  font-weight: 1.2rem;
+  font-weight: 500;
+  color: #ddd;
+}
+.applicant-name span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+}
+.form-body input {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  font-weight: 400;
+  border: 1px solid #333;
+  outline: none;
+  padding: 0.4rem 0.6rem;
+  background: transparent;
+}
+.form-body input::placeholder {
+  color: #fff;
+}
+.name-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.name-inputs input{
+    width: 32%;
+}
+.applicant-info {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.applicant-info .birth-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.applicant-info .birth-date input {
+    width: 30%;
+}
+.applicant-info .gender{
+    width: 40%;
+}
+.applicant-info .gender select{
+    width: 60%;
+    margin-right: auto;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Requerment</title>
+    <!----------------Font Awesome Icon CDN---------------->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!----------------Google Text Font CDN---------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!----------------CSS StyleSheet Link---------------->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main id="form">
+      <div class="applicant-title">
+        <span>Fill the completely</span>
+      </div>
+      <div class="form-body">
+        <div class="applicant-header">
+          <h1>Student registration form</h1>
+          <p>Fill out form carefully registration</p>
+        </div>
+        <div class="applicant-name">
+          <span>Student Name</span>
+          <div class="name-inputs">
+            <input type="text" name="first name" placeholder="First Name" />
+            <input type="text" name="middle name" placeholder="Middle Name" />
+            <input type="text" name="last name" placeholder="Last Name" />
+          </div>
+        </div>
+        <div class="applicant-info">
+          <div class="birth-date">
+            <input
+              type="text"
+              id="birth-month"
+              name="month"
+              placeholder="Month"
+            />
+            <input type="text" id="birth-day" name="day" placeholder="Day" />
+            <input type="text" id="birth-year" name="year" placeholder="year" />
+          </div>
+          <div class="gender">
+            <select name="gender" id="gender">
+              <option value="">Please Select</option>
+              <option value="gender-male">male</option>
+              <option value="gender-female">Female</option>
+              <option value="gender-other">N/A</option>
+            </select>
+          </div>
+        </div>
+        <div class="applicant-address">
+          <input
+            id="country-name"
+            type="text"
+            name="country"
+            placeholder="Country"
+          />
+          <input
+            id="school-name"
+            type="text"
+            name="School / Collage Name"
+            placeholder="School / Collage Name"
+          />
+          <input
+            id="divition-name"
+            type="text"
+            name="Divition"
+            placeholder="Divition"
+          />
+          <input id="city-name" type="text" name="City" placeholder="City" />
+          <input
+            id="postal-code"
+            type="text"
+            name="Postal code"
+            placeholder="Postal Code"
+          />
+        </div>
+        <div class="applicant-contact">
+          <input
+            id="contact-phon-number"
+            type="text"
+            name="Phone"
+            placeholder="Phone Number"
+          />
+          <input
+            id="contact-email"
+            type="text"
+            name="email"
+            autocomplete="off"
+            placeholder="Student E-mail"
+          />
+          <input
+            id="contact-mobile-nunmber"
+            type="text"
+            name="Mobile"
+            placeholder="Mobile Number"
+          />
+          <input
+            id="contact-work-number"
+            type="text"
+            name="work number"
+            placeholder="Work Number"
+          />
+        </div>
+        <div class="applicant-comments">
+          <textarea
+            name="comments"
+            id="comments"
+            cols=""
+            rows="6"
+            placeholder="Additional Comments"
+          ></textarea>
+        </div>
+        <div class="applicant-buttons">
+          <button id="submit-btn">Submit Application</button>
+          <button id="clear-btn">Clear Fields</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
